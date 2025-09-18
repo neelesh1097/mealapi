@@ -5,36 +5,144 @@
 
 
 * {
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+
+}
+
+body {
   background-color: #f0f0f0;
 }
 
 
-.item-container{
-  margin-inline: 5px;
-display: flex;
-flex-wrap:wrap;
-justify-content: space-around;
-margin-top:20px;
- align-items: flex-start;      /* better alignment for cards */
+.item-container {
+  padding-inline: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: flex-start;
+  /* better alignment for cards */
   gap: 16px;
 
 
 }
 
-.card img{
-    height: 300px;
-    width:300px;
-    border-radius:10px;
-    margin-bottom: 10px;
+.card img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.content{
+.content {
   display: flex;
   justify-content: space-between;
   font-size: medium;
-  
+
+}
+
+.navbar {
+  padding-inline: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 23px;
+
+}
+
+.logo h1 {
+  background-color: #f9f9f9;
+}
+
+.navbar ul {
+  background-color: #f9f9f9;
+  display: flex;
+
+  gap: 19px;
+
+}
+
+.signup-btn {
+  border: solid 2px;
+  padding-inline: 20px;
+  padding-block: 8px;
+  border-radius: 5px;
+}
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ingridients {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ingridients h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+}
+
+.ingridients ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.instructions {
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+}
+
+.instructions h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+  border-left: 5px solid #ff7f50;
+  padding-left: 40px;
+  /* bug mark */
+}
+
+.instructions p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
 }

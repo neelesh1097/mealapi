@@ -1,8 +1,11 @@
 import React from 'react'
 import {useState , useEffect} from 'react'
+  import { useNavigate } from "react-router-dom";
 
 function Home() {
      const [item, setItem] = useState([]);
+       const navigate = useNavigate();
+   
 
 
 
@@ -17,9 +20,9 @@ function Home() {
   }, []);
 
   return (
-       <div className = 'item-container'>{
+       <div className = 'item-container' >{
 item.map(({id , image ,cuisine ,name}) => (
-  <section key ={id} className="card">
+  <section key ={id} className="card"  onClick={() => navigate(`/product/${id}`)} >
 <img src={image} alt=""/>
     <section className="content">
       <p>{name}</p>
