@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@import "tailwindcss";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  background-color: #f0f0f0;
+}
+
+
+.item-container{
+  margin-inline: 5px;
+display: flex;
+flex-wrap:wrap;
+justify-content: space-around;
+margin-top:20px;
+ align-items: flex-start;      /* better alignment for cards */
+  gap: 16px;
+
+
+}
+
+.card img{
+    height: 300px;
+    width:300px;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+  
+}
