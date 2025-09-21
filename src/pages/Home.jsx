@@ -1,15 +1,16 @@
 import React from 'react'
-import {useState , useEffect} from 'react'
-  import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
+import Title from '../components/Title';
 
 function Home() {
-     const [item, setItem] = useState([]);
-       const navigate = useNavigate();
-   
+  const [item, setItem] = useState([]);
+  const navigate = useNavigate();
 
 
 
-   useEffect(() => {
+
+  useEffect(() => {
     fetch("https://dummyjson.com/recipes")
       .then((res) => res.json())
       .then((data) => {
@@ -20,23 +21,28 @@ function Home() {
   }, []);
 
   return (
-       <div className = 'item-container' >{
-item.map(({id , image ,cuisine ,name}) => (
-  <section key ={id} className="card"  onClick={() => navigate(`/product/${id}`)} >
-<img src={image} alt=""/>
-    <section className="content">
-      <p>{name}</p>
-      <p>{cuisine }</p>
 
-    </section>
-  </section>
-))
+    <div className='item-container' >
 
-   }
+      {
+
+        item.map(({ id, image, cuisine, name }) => (
+          <section key={id} className="card" onClick={() => navigate(`/product/${id}`)} >
+            <img src={image} alt="" />
+            <section className="content">
+              <p>{name}</p>
+              <p>{cuisine}</p>
+
+            </section>
+          </section>
+        ))
+
+      }
 
 
-   </div>
-    
+    </div>
+
+
   )
 }
 

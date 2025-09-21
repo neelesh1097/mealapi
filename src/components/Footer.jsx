@@ -49,7 +49,7 @@ function Footer() {
 
       {/* Sub-footer */}
       <div className="subfooter">
-        <div className="container flex subfooter-container">
+        <div className="container flex subfooter-container justify-center items-center gap-3">
           <a className="hover-link" href="#">Privacy Policy</a>
           <a className="hover-link" href="#">Terms & Conditions</a>
           <a className="hover-link" href="#">Security Information</a>
