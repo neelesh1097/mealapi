@@ -6,8 +6,6 @@
 
 * {
 
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 
@@ -18,12 +16,14 @@ body {
 }
 
 
+
+
 .item-container {
   padding-inline: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-block: 20px;
   align-items: flex-start;
   /* better alignment for cards */
   gap: 16px;
@@ -48,7 +48,7 @@ body {
 
 .navbar {
   padding-inline: 5px;
-  background-color: #f9f9f9;
+  background-color: #222;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -57,6 +57,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  color:#fff;
 }
 
 .logo {
@@ -64,12 +65,12 @@ body {
 
 }
 
-.logo h1 {
+/* .logo h1 {
   background-color: #f9f9f9;
-}
+} */
 
 .navbar ul {
-  background-color: #f9f9f9;
+ 
   display: flex;
 
   gap: 19px;
@@ -153,20 +154,18 @@ body {
  
 }
 
-.link-company{
-
-}
-
 .company-logo{
 
   font-size:25px;
 }
 
 
-
-
-.footer-container{
-  padding: 20px;
+footer{
+  padding:25px;
   background-color: #222;
-  color:#eee
+  color:#eee;
+ 
+  
+
 }
+
