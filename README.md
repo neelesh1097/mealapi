@@ -29,14 +29,16 @@ The project is designed to provide users with an elegant food browsing experienc
 
 ---
 
-## 📂 Project Structure
+## 🚀 Getting Started
 
-meal-website/
-├── public/ # Static assets
-├── src/
-│ ├── components/ # Reusable UI components (e.g., Title.jsx)
-│ ├── pages/ # Individual pages (Home, About, Contact, etc.)
-│ ├── App.jsx # Main app component with routing
-│ ├── index.js # Entry point
-│ └── styles/ # Global styles (if needed)
-└── package.json # Dependencies and scripts
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/meal-website.git
+cd meal-website
+2. Install dependencies
+npm install
+3. Run the development server
+npm start
+4. Build for production
+npm run build
+
