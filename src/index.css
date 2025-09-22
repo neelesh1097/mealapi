@@ -151,6 +151,7 @@ body {
 .hover-link{
   display: flex;
   margin-top: 10px;
+  color: #555;
  
 }
 
@@ -163,9 +164,14 @@ body {
 footer{
   padding:25px;
   background-color: #222;
-  color:#eee;
+  color:#bababa;
  
   
 
+}
+
+.link-company h4{
+  font-weight: 500;
+ 
 }
 
