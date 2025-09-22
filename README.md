@@ -1,12 +1,42 @@
-# React + Vite
+# 🍴 Forever Meals Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive meal ordering website built with **React** and **Tailwind CSS**.  
+The project is designed to provide users with an elegant food browsing experience and businesses with a scalable frontend for meal-related services.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- **Homepage** with hero section and featured meals
+- **About Us Page** describing company values and mission
+- **Contact Page** with store details, email, phone, and careers section
+- **Reusable Components**:
+  - `Title` component for consistent section headings
+  - Reusable button styles
+- **Responsive Design** (works seamlessly on mobile, tablet, and desktop)
+- **Professional Layout** with image and content alignment
+- **Clean UI** using Tailwind CSS utilities
+- **Scalable structure** for adding more pages (Menu, Cart, Login, etc.)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React (with functional components & hooks)
+- **Styling**: Tailwind CSS
+- **Routing**: React Router (if added)
+- **Version Control**: Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+meal-website/
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Reusable UI components (e.g., Title.jsx)
+│ ├── pages/ # Individual pages (Home, About, Contact, etc.)
+│ ├── App.jsx # Main app component with routing
+│ ├── index.js # Entry point
+│ └── styles/ # Global styles (if needed)
+└── package.json # Dependencies and scripts
