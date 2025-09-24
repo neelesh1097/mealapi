@@ -24,7 +24,7 @@ The project is designed to provide users with an elegant food browsing experienc
 
 - **Frontend**: React (with functional components & hooks)
 - **Styling**: Tailwind CSS
-- **Routing**: React Router (if added)
+- **Routing**: React Router
 - **Version Control**: Git & GitHub
 
 ---
